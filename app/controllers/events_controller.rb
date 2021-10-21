@@ -4,4 +4,17 @@ class EventsController < ApplicationController
     @events = Event.all
   end
 
+  def new
+    @event = Event.new
+  end
+
+  def create
+    Event.create(event_parameter)
+    redirect_to root_path
+  end
+
+  def event_parameter
+    params.require(:event).permit(:title, :content, :start_time, :end_time)
+  end
+
 end
