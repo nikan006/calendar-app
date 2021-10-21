@@ -17,6 +17,12 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
+  def destroy
+    @event = Event.find(params[:id])
+    @event.destroy
+    redirect_to events_path, notice:"削除しました"
+  end
+
   def event_parameter
     params.require(:event).permit(:title, :text, :start_time, :end_time)
   end
