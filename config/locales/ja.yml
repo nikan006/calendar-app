@@ -1,0 +1,6 @@
+ja:
+  activerecord:
+    attributes:
+      event:
+        title: タイトル
+        text: 内容
