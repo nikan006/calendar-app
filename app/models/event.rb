@@ -1,7 +1,7 @@
 class Event < ApplicationRecord
 
   with_options presence: true do
-    validates :title
+    validates :title, length:{maximum: 10}
     validates :text
   end
   
