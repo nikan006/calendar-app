@@ -16,13 +16,13 @@
   </div>
 
   <div class="time">
-    <div class="form-tag">時間</div>
-    <%= f.datetime_select :start_time %>
+    <div class="form-tag">開始時間</div>
+    <%= f.datetime_field :start_time, min: Date.current %>
   </div>
 
   <div class="time">
-    <div class="form-tag">時間</div>
-    <%= f.datetime_select :end_time %>
+    <div class="form-tag">終了時間</div>
+    <%= f.datetime_field :end_time, min: Date.current %>
   </div>
 
 
