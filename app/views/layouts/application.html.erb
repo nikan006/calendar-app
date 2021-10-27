@@ -2,24 +2,17 @@
 <html>
   <head>
     <title>Calendar</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
   </head>
 
   <body>
   <% if user_signed_in? %>
     <div class="user_nav grid-6">
-      <span><%= current_user.name %>
-        <ul class="user__info">
-          <li>
-            <%= link_to "マイページ", "/users/#{current_user.id}" %>
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-          </li>
-        </ul>
-      </span>
+      <span><%= current_user.name %></span>
     </div>
   <% else %>
     <div class="grid-6">
@@ -27,6 +20,7 @@
       <%= link_to "新規登録", new_user_registration_path, class: "post" %>
     </div>
   <% end %>
-    <%= yield %>
+  
+  <%= yield %>
   </body>
 </html>

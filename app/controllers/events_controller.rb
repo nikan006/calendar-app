@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :authenticate_user!
 
   def index
     @events = Event.includes(:user)
@@ -11,6 +11,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.create(event_parameter)
+    @event.user_id = current_user.id
     if @event.save
       redirect_to root_path
     else
@@ -45,12 +46,6 @@ class EventsController < ApplicationController
 
   def event_parameter
     params.require(:event).permit(:title, :text, :start_time, :end_time).merge(user_id: current_user.id)
-  end
-
-  def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
   end
 
 end
