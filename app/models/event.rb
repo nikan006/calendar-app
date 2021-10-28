@@ -5,4 +5,6 @@ class Event < ApplicationRecord
     validates :text
   end
   
+  belongs_to :user
+  
 end
