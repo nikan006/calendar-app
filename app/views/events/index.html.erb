@@ -3,12 +3,10 @@
   <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
     <%= month_calendar events: @events do |date, events| %>
       <%= date.day %>
-        <% if @event.user.id == current_user.id %>
           <% events.each do |event| %>
             <div>
               <%= link_to event.title, event %>
             </div>
           <% end %>
-        <% end %>
     <% end %>
 <% end %>
