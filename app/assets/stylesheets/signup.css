@@ -6,7 +6,15 @@
 
 .box {
   width: 350px;
-  height: 450px;
+  height: 400px;
+  margin: 60px auto 0;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+}
+
+.box1 {
+  width: 350px;
+  height: 500px;
   margin: 60px auto 0;
   border-radius: 4px;
   border: 1px #ddd solid;
@@ -25,6 +33,10 @@
   color: #111111;
 }
 
+.box-name {
+  margin-bottom: 13px;
+}
+
 .box-email {
   margin-bottom: 13px;
 }
@@ -33,14 +45,14 @@
   margin-bottom: 22px;
 }
 
-.box-email label, .box-password label {
+.box-name label, .box-email label, .box-password label {
   font-weight: 700;
   font-size: 13px;
   padding-left: 2px;
   padding-bottom: 2px;
 }
 
-.box-email input[type="email"], .box-password input[type="password"] {
+.box-name input[type="text"], .box-email input[type="email"], .box-password input[type="password"] {
   border-style: none;
   box-sizing: border-box;
   width: 100%;
