@@ -22,7 +22,15 @@
 
 .box2 {
   width: 350px;
-  height: 550px;
+  height: 580px;
+  margin: 60px auto 0;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+}
+
+.box3 {
+  width: 350px;
+  height: 530px;
   margin: 60px auto 0;
   border-radius: 4px;
   border: 1px #ddd solid;
