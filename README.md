@@ -56,22 +56,22 @@
 
 # 実装した機能についての画像やGIFおよびその説明
 - 月間方式にてスケジュールを管理することができます。「Next」ボタンを押すと来月になります。「Previous」ボタンを押すと先月の予定を確認できます。
-  https://gyazo.com/866cabbfe0c18748cfab456ba94a22e9
+[![Image from Gyazo](https://i.gyazo.com/866cabbfe0c18748cfab456ba94a22e9.gif)](https://gyazo.com/866cabbfe0c18748cfab456ba94a22e9)
 
 - 「新規イベント追加」ボタンを押すことで新規イベントを入力することができます。
-  https://gyazo.com/4c373c61c9d85c221f7f96f93b9beb54
+  [![Image from Gyazo](https://i.gyazo.com/4c373c61c9d85c221f7f96f93b9beb54.gif)](https://gyazo.com/4c373c61c9d85c221f7f96f93b9beb54)
 
 - タイトル・内容を空欄で記述すると日本語でエラー内容が表示されるようにしました。
-  https://gyazo.com/a64fae9eece43025b501f1686dce816f
+  [![Image from Gyazo](https://i.gyazo.com/a64fae9eece43025b501f1686dce816f.gif)](https://gyazo.com/a64fae9eece43025b501f1686dce816f)
 
 - スケジュールに記載してある予定を押すと記載した内容と予定日時が確認できます。
-  https://gyazo.com/dce9013b1b2e3544a3611f68a07ab8a0
+  [![Image from Gyazo](https://i.gyazo.com/dce9013b1b2e3544a3611f68a07ab8a0.gif)](https://gyazo.com/dce9013b1b2e3544a3611f68a07ab8a0)
 
 - 「編集」ボタンを押す事でスケジュールの予定を編集することができます。
-  https://gyazo.com/2bc3de6ade16745624d0b5f92515065c
+  [![Image from Gyazo](https://i.gyazo.com/2bc3de6ade16745624d0b5f92515065c.gif)](https://gyazo.com/2bc3de6ade16745624d0b5f92515065c)
 
 - 「消去」ボタンを押す事でスケジュールの予定を消去することができます。
-  https://gyazo.com/bf9d36be34774cf042d26e0fb7576097
+  [![Image from Gyazo](https://i.gyazo.com/bf9d36be34774cf042d26e0fb7576097.gif)](https://gyazo.com/bf9d36be34774cf042d26e0fb7576097)
 
 
 # 実装予定機能
