@@ -53,7 +53,7 @@
 
 # 洗い出した要件
 - スプレットシートの要件定義になります。
-  https://gyazo.com/e7a3f042c744a18ad6e13593ed4dc2a6
+  [![Image from Gyazo](https://i.gyazo.com/e7a3f042c744a18ad6e13593ed4dc2a6.png)](https://gyazo.com/e7a3f042c744a18ad6e13593ed4dc2a6)
 
 
 # 実装した機能についての画像やGIFおよびその説明
@@ -97,7 +97,7 @@
 
 # データベース設計
 ER図を下記に添付致しましたので参照ください
-https://gyazo.com/f6ac9b0c532cf4d2c87f9dd02cd14e17
+[![Image from Gyazo](https://i.gyazo.com/f6ac9b0c532cf4d2c87f9dd02cd14e17.png)](https://gyazo.com/f6ac9b0c532cf4d2c87f9dd02cd14e17)
 
 # ローカルでの動作環境
 - 言語・フレームワーク
