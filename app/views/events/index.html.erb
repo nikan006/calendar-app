@@ -1,18 +1,26 @@
- <% if user_signed_in? %>
+<div class="box4">
+  <div class="box-inner2">
+    <% if user_signed_in? %>
       <div class="user_nav grid-6">
-        <span><%= current_user.name %></span>
+        <h3>現在ログイン中のユーザー：<%= current_user.name %></h3>
       </div>
     <% end %>
 
-<% if user_signed_in? %>
-  <%= link_to "新規イベント追加", new_event_path %>
-  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-    <%= month_calendar events: @events do |date, events| %>
-      <%= date.day %>
-          <% events.each do |event| %>
-            <div>
-              <%= link_to event.title, event %>
-            </div>
-          <% end %>
+    <% if user_signed_in? %>
+      <div class="button">
+        <%= link_to "新規イベント追加", new_event_path %>
+      </div>
+        <%= month_calendar events: @events do |date, events| %>
+          <%= date.day %>
+            <% events.each do |event| %>
+              <div>
+                <%= link_to event.title, event %>
+              </div>
+            <% end %>
+        <% end %>
+      <div class="button2">
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      </div>
     <% end %>
-<% end %>
+  </div>
+</div>
