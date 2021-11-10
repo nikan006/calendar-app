@@ -58,3 +58,5 @@ gem 'rails-i18n', '~> 6.0'
 gem "bootstrap-datepicker-rails"
 gem 'rounding'
 gem "devise"
+gem 'rspec-rails', '~> 4.0.0'
+gem 'factory_bot_rails'
