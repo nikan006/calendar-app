@@ -13,6 +13,7 @@
 
 ### Association
 - belongs_to : user
+- has_many :comments
 
 ## users テーブル
 | Column                 | Type       | Options                        |
@@ -22,7 +23,19 @@
 | encrypted_password     | string     | null: false                    |
 
 ### Association
-- has_many : events
+- has_many :events
+- has_many :comments
+
+## comment テーブル
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | ------------------------------ |
+| user_id                | integer    |                                |
+| event_id               | integer    |                                |
+| text                   | text       | null: false                    |
+
+## Association
+- belongs_to :user
+- belongs_to :event
 
 
 # アプリケーション名
