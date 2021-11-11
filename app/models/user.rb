@@ -3,6 +3,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   has_many :events, dependent: :destroy
+  has_many :comments
 
   with_options presence: true do
     validates :name
