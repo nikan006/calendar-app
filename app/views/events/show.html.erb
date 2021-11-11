@@ -24,5 +24,12 @@
       <button><%= link_to '戻る', events_path %></button>
     </div>
 
+    <div class="container">
+      <%= form_with(model: @event, local: true) do |f| %>
+        <%= f.text_area :text %>
+        <%= f.submit "コメント"%>
+      <% end %>
+    </div>
+
   </div>
 </div>
