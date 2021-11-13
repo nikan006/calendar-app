@@ -22,13 +22,7 @@
       <button><%= link_to '編集', edit_event_path(@event) %></button>
       <button><%= link_to '消去',event_path(@event.id), method: :delete, data: { confirm: '予定を削除しますがよろしいですか？' } %></button>
       <button><%= link_to '戻る', events_path %></button>
-    </div>
-
-    <div class="container">
-      <%= form_with(model: @event, local: true) do |f| %>
-        <%= f.text_area :text %>
-        <%= f.submit "コメント"%>
-      <% end %>
+      <button><%= link_to "コメントする",event_comment_path(@event.id) %></button>
     </div>
 
   </div>

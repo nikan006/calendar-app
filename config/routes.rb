@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get "events/index"
   root to: "events#index"
   resources :events do
-    resources:comments, only: :create
+    resources:comments, only: [:create,:show]
   end
   resources :users, only: :show
 end
