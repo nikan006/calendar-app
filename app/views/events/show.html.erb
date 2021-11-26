@@ -1,29 +1,40 @@
-<div class="box3">
-  <div class="box-inner">
+<div class="event">
+  <div class="box3">
+    <div class="box-inner">
 
-    <div class="box-time2">
-      <h4>日時</h4>
-      <h5>予定開始時刻  <<%= @event.start_time.strftime("%H:%M") %>><br /></h5>
-      <h5>予定終了時刻  <<%= @event.end_time.strftime("%H:%M") %>></h5>
-    </div>
+      <div class="box-time2">
+        <h4>日時</h4>
+        <h5>予定開始時刻  <<%= @event.start_time.strftime("%H:%M") %>><br /></h5>
+        <h5>予定終了時刻  <<%= @event.end_time.strftime("%H:%M") %>></h5>
+      </div>
 
-    <div class="box-title2">
-      <h4>タイトル</h4>
-      <div class="box-text3"><%= @event.title %></div>
-    </div>
+      <div class="box-title2">
+        <h4>タイトル</h4>
+        <div class="box-text3"><%= @event.title %></div>
+      </div>
     
 
-    <div class="box-text2">
-      <h4>内容</h4>
-      <div class="box-text3"><%= @event.text %></div>
-    </div>
+      <div class="box-text2">
+        <h4>内容</h4>
+        <div class="box-text3"><%= @event.text %></div>
+      </div>
 
-    <div class="box-submit2">
-      <button><%= link_to '編集', edit_event_path(@event) %></button>
-      <button><%= link_to '消去',event_path(@event.id), method: :delete, data: { confirm: '予定を削除しますがよろしいですか？' } %></button>
-      <button><%= link_to '戻る', events_path %></button>
-      <button><%= link_to "コメントする",event_comment_path(@event.id) %></button>
+      <div class="box-submit2">
+        <button><%= link_to '編集', edit_event_path(@event) %></button>
+        <button><%= link_to '消去',event_path(@event.id), method: :delete, data: { confirm: '予定を削除しますがよろしいですか？' } %></button>
+        <button><%= link_to '戻る', events_path %></button>
+        <button><%= link_to "コメントする",event_comment_path(@event.id) %></button>
+      </div>
     </div>
+  </div>
 
+  <div class="comments">
+    <h4>コメント一覧</h4>
+    <% @comments.each do |comment| %>
+      <p>
+        <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>:</strong>
+        <%= comment.text %>
+      </p>
+    <% end %>
   </div>
 </div>

@@ -4,6 +4,10 @@
   text-decoration: none;
 }
 
+.event {
+  display: flex;
+}
+
 .box {
   width: 350px;
   height: 400px;
