@@ -2,7 +2,7 @@
   <div class="box-inner">
     
     <div class="container">
-      <%= form_with(model: @event, local: true) do |f| %>
+      <%= form_with(model: [@event,@comment], local: true) do |f| %>
         
         <div class="box-text">
           <%= f.label :text, "コメント内容" %><br />
